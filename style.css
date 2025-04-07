@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* { 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body  { 
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #372C2E;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+}
+
+
+header { 
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%; 
+    background-color: #372C2E;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.logo { 
+    font-size: 3rem;
+    color: #f6f6f2;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
+    right: px;
+}
+
+.logo:hover { 
+    transform: scale(1.1);
+}
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+nav a { 
+    font-size: 1.8rem;
+    color: #f6f6f2;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, 
+nav a.active { 
+    color: #DE9E48;
+    border-bottom: 3px solid #DE9E48;
+}
+
+.nav-left { 
+    display: flex;
+    gap: 15px;
+    padding-left: 150px;
+
+}
+
+.nav-right { 
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+   
+}
+
+section { 
+    min-height: 100vh;
+    padding: 5rem, 9%, 5rem;
+}
+
+
+.home { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #372C2E;
+}
+
+.home .home-content h1{ 
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    
+}
+
+span { 
+    color: blue;
+}
+
+.home-content h2 {
+    color: #f5f4df;
+    
+}
+
+.home-content h3 { 
+    font-size: 4rem;
+    margin-bottom:1rem;
+    font-weight: 700;
+}
+
+.home-content p { 
+    color: #f5f4df;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-right: 50px;
+}
+
+.home-img { 
+    border-radius: 50%;
+}
+
+.home-img img { 
+    position: relative;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #DE9E48;
+    left: 50px;
+}
+
+.home-img img:hover { 
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.typing-text { 
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: #f5f4df;
+}
+
+.typing-text span { 
+    position: relative;
+}
+
+.typing-text span::before { 
+    content: "Drums";
+    color: #DE9E48;
+    animation: words 7s infinite;
+}
+
+.typing-text span::after { 
+    content: "";
+    background-color: #372C2E;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #372C2E;
+    right: -8;
+    animation: cursor 0.9s infinite;
+}
+
+@keyframes cursor{
+    to { 
+        border-left: 3px solid #f6f6f2;
+    }
+}
+
+@keyframes words{
+    1%, 20% { 
+        content: "Alto Saxophone"
+    }
+
+    21%, 40% { 
+        content: "Flugelhorn"
+    }
+
+    41%, 60% { 
+        content: "Flute"
+    }
+
+    61%, 80% { 
+        content: "Piano"
+    } 
+}
+
+#songwritings > h2 { 
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #DE9E48;
+}
+
+
+.songwriting { 
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: nowrap;
+    padding-top: 60px;
+}
+
+.songwriting iframe { 
+    width: 50%;
+    height: 600px;
+    border: 5px solid #DE9E48;
+}
+
+.songwriting .info { 
+    width: 50%;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.info h1 { 
+    font-size: 200%;
+    color: #f6f6f2;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info h2 { 
+    color: #f5f4df;
+    font-size: 150%;
+    border-bottom: 2px dashed #7A431D;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.info p { 
+    color: #DE9E48;  
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 10px;
+}
+
+.splish {
+    display: block;
+    margin-top: 5px;
+    margin-right: auto;
+    width: 400px; /* or whatever size fits your design */
+    border-radius: 10px;
+    background-color: #fff6f0; /* optional background */
+    
+  }
+
+#recording { 
+    margin-top: 20px;
+}
+
+/* create timeline for experience page */
+
+.timeline { 
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container { 
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+
+.text-box { 
+    padding: 20px;
+    background: #f5f4df;
+    position: relative;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.left-container { 
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    width: 40px;
+    height: 40px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+
+.right-container .dot { 
+    left: -20px;
+}
+
+.timeline::after { 
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #f5f4df;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+
+.text-box h2 { 
+    font-weight: 600;
+}
+
+.text-box small { 
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.text-box p{ 
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.left-container-arrow { 
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f5f4df;
+    right: -15px;
+}
+
+.right-container-arrow { 
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #f5f4df;
+    left: -15px;
+}
+
+#lol { 
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #DE9E48;
+}
+
+.contact { 
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.container2 { 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container2 h2 { 
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f6f6f2;
+}
+
+.contact-wrapper { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.contact-form { 
+    text-align: left;
+
+}
+
+.contact-form h3 { 
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f6f6f2;
+}
+
+.form-group { 
+    margin-bottom: 20px;
+}
+
+input, textarea { 
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f6f6f2;
+    color: #372C2E;
+}
+
+input:focus,
+textarea:focus { 
+    outline: none;
+    box-shadow: 0 0 8px #DE9E48;
+}
+
+button { 
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #DE9E48;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info { 
+    text-align: left;
+}
+
+.contact-info h3 { 
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f6f6f2;
+}
+
+.contact-info p { 
+    margin-bottom: 10px;
+    color: #f6f6f2;
+}
+
