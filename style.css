@@ -17,7 +17,7 @@ body  {
     background: #372C2E;
     justify-content: center;
     align-items: center;
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
 
@@ -84,7 +84,7 @@ nav a.active {
 
 section { 
     min-height: 100vh;
-    padding: 5rem, 9%, 5rem;
+    padding: 5rem 9% 5rem;
 }
 
 
@@ -94,6 +94,7 @@ section {
     align-items: center;
     gap: 8rem;
     background-color: #372C2E;
+    padding-top: 2rem;
 }
 
 .home .home-content h1{ 
